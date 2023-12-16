@@ -24,6 +24,3 @@ body, html {
 .homePage p {
     color: #333;
 }
-.navbar, .footer {
-    z-index: 1000; 
-}
