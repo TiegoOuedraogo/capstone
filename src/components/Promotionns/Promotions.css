@@ -1,0 +1,37 @@
+.promotions {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Creates a responsive grid */
+    gap: 20px; /* Space between grid items */
+  }
+  
+  .promotion-item {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px; /* Rounded corners for the promotion items */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .promotion-item:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+  }
+  
+  .promotion-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .promotion-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .promotion-item p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  

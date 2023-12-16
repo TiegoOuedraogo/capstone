@@ -1,20 +1,18 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { AuthProvider } from './contexts/AuthContext';
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
+import Layout from './components/Layout/Layout';
+// import HomePage from './pages/HomePage';
+// import AboutPage from './pages/AboutPage';
+import { ModalProvider } from './contexts/ModalContexts'; 
+import MainBanner from './components/MainBanner/MainBanner';
 
-const App = () => {
+function App() {
   return (
-    <AuthProvider>
-      <Router>
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/about" component={AboutPage} />
-        </Switch>
-      </Router>
-    </AuthProvider>
+    <ModalProvider>
+      <Layout>
+        < MainBanner />
+      </Layout>
+    </ModalProvider>
   );
-};
+}
 
 export default App;

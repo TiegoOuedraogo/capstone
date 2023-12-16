@@ -1,0 +1,49 @@
+.main-banner {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #ed0808f6; 
+  padding: 50px 20px; 
+  position: relative; 
+}
+
+.headline {
+  font-size: 2.5em; 
+  margin-bottom: 0.5em;
+  color: #e50808;
+}
+
+.subheadline {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.cta-button {
+  background-color: #f04; /* Color of your choice */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 1em; /* Space below the button */
+}
+
+.banner-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.banner-link {
+  color: white; 
+  text-decoration: none;
+  font-weight: bold;
+  background-color: rgba(240, 3, 3, 0.9); /* Semi-transparent background */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.banner-link:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker on hover */
+}

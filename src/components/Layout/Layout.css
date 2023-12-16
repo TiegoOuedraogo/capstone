@@ -1,0 +1,19 @@
+/* Responsive design and theming */
+.content {
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--footer-bg-color, #333);
+  color: var(--footer-text-color, white);
+}
+
+/* Media query example for responsive design */
+@media (max-width: 600px) {
+  .navbar, .footer {
+      flex-direction: column;
+  }
+}
