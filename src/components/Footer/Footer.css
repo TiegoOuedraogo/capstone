@@ -12,7 +12,7 @@ body, html {
 }
 
 .footer {
-  background-color: #151414 !important;
+  background-color: #323030!important;
   color: white;
   text-align: center;
   padding: 20px 0;
@@ -21,7 +21,7 @@ body, html {
   height: 60px; 
 }
 .footer p {
-  color: #333; 
+  color: #fff; 
   font-size: 16px; 
   text-align: center;
 }

@@ -1,6 +1,8 @@
 import React from 'react';
 import './Navbar.css'; 
 import logo from '../../assets/images/logo1.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
     return (
@@ -19,18 +21,22 @@ const Navbar = () => {
                 </div>
                 <a href="/">Services</a>
                 <a href="/">Contact</a>
-                <div className="dropdown">
-                    <button className="dropbtn">Account</button>
+                <div className="search-bar">
+                <input type="text" placeholder="Search..." />
+                <button type="submit">Search</button>
+            </div>
+            <div className="dropdown">
+                    <button className="dropbtn">
+                        <FontAwesomeIcon icon={faUserCircle} className="account-icon" />
+                        
+                    </button>
                     <div className="dropdown-content">
                         <a href="/Account/login">Login</a>
                         <a href="/Account/signup">Sign up</a>
                     </div>
                 </div>
             </div>
-            <div className="search-bar">
-                <input type="text" placeholder="Search..." />
-                <button type="submit">Search</button>
-            </div>
+            
         </nav>
     );
 }
