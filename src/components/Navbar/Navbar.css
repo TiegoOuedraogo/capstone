@@ -10,6 +10,10 @@
   width: 100%;
 
 }
+.navbar-logo {
+  height: 50px;
+  border-radius: 50%; 
+}
 
 .nav-links a {
   text-decoration: none;

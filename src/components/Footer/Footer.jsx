@@ -2,10 +2,13 @@ import React from 'react';
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import logo from '../../assets/images/logo1.png';
 
 const Footer = () => {
     return (
         <footer className="footer">
+            <img src={logo} alt="BfBeauty Logo" className="footer-logo" />
+
             <div className="social-media-links">
                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faFacebook} />

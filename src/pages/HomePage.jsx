@@ -7,12 +7,14 @@ import Promotions from '../components/Promotionns/Promotions';
 
 const HomePage = () => {
     return (
+    <div className="content"> 
+        <Navbar />
         <div>
-            <Navbar />
             <MainBanner />
             <Promotions />
             {/* Other sections of the homepage */}
         </div>
+    </div>
     );
 }
 

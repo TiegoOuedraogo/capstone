@@ -1,9 +1,11 @@
 import React from 'react';
 import './Navbar.css'; 
+import logo from '../../assets/images/logo1.png';
 
 const Navbar = () => {
     return (
         <nav className="navbar">
+            <img src={logo} alt="BfBeauty Logo" className="navbar-logo" />
             <div className="nav-links">
                 <a href="/">Home</a>
                 <a href="/about">About</a>
